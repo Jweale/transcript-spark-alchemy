@@ -3,16 +3,33 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { ChevronDown } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
+  const location = useLocation();
+  
   return (
     <header className="bg-white border-b border-gray-200 px-6 py-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-8">
           <h1 className="text-2xl font-caprasimo text-brand-primary">Podcasteo</h1>
           <nav className="hidden md:flex space-x-6">
-            <a href="#" className="text-brand-text hover:text-brand-primary font-medium transition-colors">Dashboard</a>
-            <a href="#" className="text-gray-600 hover:text-brand-primary font-medium transition-colors">Upload</a>
+            <a 
+              href="/" 
+              className={`font-medium transition-colors ${
+                location.pathname === '/' ? 'text-brand-primary' : 'text-gray-600 hover:text-brand-primary'
+              }`}
+            >
+              Dashboard
+            </a>
+            <a 
+              href="/upload" 
+              className={`font-medium transition-colors ${
+                location.pathname === '/upload' ? 'text-brand-primary' : 'text-gray-600 hover:text-brand-primary'
+              }`}
+            >
+              Upload
+            </a>
             <a href="#" className="text-gray-600 hover:text-brand-primary font-medium transition-colors">Analytics</a>
           </nav>
         </div>
