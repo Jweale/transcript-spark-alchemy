@@ -12,7 +12,7 @@ const ValueSection: React.FC = () => {
     },
     {
       icon: HelpCircle,
-      title: "A FAQ block tuned for Google's "People Also Ask".",
+      title: "A FAQ block tuned for Google's \"People Also Ask\".",
       color: "bg-green-50 text-brand-accent"
     },
     {

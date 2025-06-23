@@ -6,8 +6,8 @@ import { Clock, Zap, Eye, Target } from 'lucide-react';
 const ComparisonSection: React.FC = () => {
   const comparisons = [
     {
-      pain: "2–4 hours per episode rewriting into "SEO format".",
-      solution: "Auto-generates 600-900-word article, FAQ and pull-quotes in <45 s.",
+      pain: "2–4 hours per episode rewriting into \"SEO format\".",
+      solution: "Auto-generates 600-900-word article, FAQ and pull-quotes in under 45 seconds.",
       painIcon: Clock,
       solutionIcon: Zap
     },
@@ -24,7 +24,7 @@ const ComparisonSection: React.FC = () => {
       solutionIcon: "✅"
     },
     {
-      pain: ""Will ChatGPT ever show our show?"",
+      pain: "\"Will ChatGPT ever show our show?\"",
       solution: "Entity-rich JSON-LD & Q-A blocks feed LLMs and SGE—so your brand is the answer.",
       painIcon: "🤖",
       solutionIcon: "🎯"
