@@ -39,6 +39,12 @@ const Header = () => {
             + New Upload
           </Button>
           
+          <a href="/auth">
+            <Button variant="default" size="sm" className="bg-brand-primary hover:bg-brand-primary/90">
+              Sign In
+            </Button>
+          </a>
+          
           <div className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 rounded-lg px-3 py-2 transition-colors">
             <Avatar className="h-8 w-8">
               <AvatarFallback className="bg-brand-primary text-white text-sm">JD</AvatarFallback>
